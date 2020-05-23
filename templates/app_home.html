@@ -1,0 +1,39 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <h1>CGPA calculator</h1>
+    <h2>Regultion-2017</h2>
+</div>
+{% endblock %}
+
+{% block body %}
+<article class="article-GPA">
+    <h2>GPA</h2>
+    <p>
+        <abbr title="Grade Point Average">GPA</abbr> is the abbrevation for <strong>Grade Point Average</strong> which is typicallly calculated by adding all the numbered grades you have received and dividing them by the number of credits you have taken from semester exams.
+    </p>
+</article>
+<article class="article-CGPA">
+    <h2>CGPA</h2>
+    <p>
+        <abbr title="Cumulative Grade Points Average">CGPA</abbr> is defined as <strong>Cumulative Grade Points Average</strong>  CGPA is the measurement of average grade points obtained by a student in all the semesters.
+    </p>
+</article>
+<article class="article-arrears">
+    <h2>What If I Have Arrears?</h2>
+    <p>
+        if you have arrears,your GPA will be calculated without including the credits alloted for that specific subject.when you clear that subjet then the ceredit vlaue of that subject will be added and it will give you a new GPA.with this GPA you have to calculate you new CGPA.  
+    </p>
+</article>
+<div class="departments-button">
+    <a href="{{ url_for('departments') }}">
+        <input type="button" value="CALCULATE CGPA">
+    </a>
+</div>
+
+{% endblock %}
+
+{% block foot %}
+
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <h2>Departments</h2>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-container">
+    <table class="departments-table">
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('eie')}}">
+                    <input type="button" value="ELECTRONICS AND INSTRUMENTATION ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('eee')}}">
+                    <input type="button" value="ELECTRICAL AND ELECTRONICS ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('ece')}}">
+                    <input type="button" value="ELECTRONICS AND COMMUNICATIONN ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('it')}}">
+                    <input type="button" value="INFORMATION TECHNOLOGY">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('cse')}}">
+                    <input type="button" value="COMPUTER SCIENCE ENGINEEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('civil')}}">
+                    <input type="button" value="CIVIL ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('mech')}}">
+                    <input type="button" value="MECHANICAL ENGINEEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('automobile')}}">
+                    <input type="button" value="AUTOMOBILE ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('aero')}}">
+                    <input type="button" value="AERONAUTICAL ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('bme')}}">
+                    <input type="button" value="BIOMEDICAL ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('agri')}}">
+                    <input type="button" value="AGRICULTURE ENGINEERING">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments">
+                <a href="{{url_for('biotech')}}">
+                    <input type="button" value="BIOTECHNOLOGY">
+                </a>
+            </div>
+        </tr>
+        <tr>
+            <div class="departments others">
+                <a href="{{ url_for('others') }}">
+                    <input type="button" value="OTHERS">
+                </a>
+            </div>
+        </tr>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,322 @@
+html{
+    width: 100%;
+    height: 100vw;
+    background-image: linear-gradient(to bottom,#96deda,#50c9c3);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    text-align: center;
+    width: 100%;
+}
+
+.head{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head h1{
+    font-weight: bolder;
+}
+
+article h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article{
+    height: auto;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 ;
+    background-image: linear-gradient(to top,#84fab0,#8fd3f4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: 0.3s;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+article:hover{
+    box-shadow: 0 8px 16px 0 ;
+}
+
+abbr,a{
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+.departments-button{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.departments-button input[type='button']{
+    border-radius: 12px;
+    border: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: turquoise;
+    background-image: linear-gradient(black,black);
+    box-shadow: 0 8px 16px 0 #8fd3f4;
+}
+
+.departments-button input[type='button']:hover{
+    box-shadow: 0 16px 32px 0 #8fd3f4;
+}
+
+
+/*
+
+departments page
+
+*/
+
+
+.departments input{
+    border-radius: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-image: linear-gradient(#1cd8d2,#93edc7);
+    width: 100%;
+    height: 50px;
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+.departments.others input{
+    background-image: linear-gradient(to bottom,#2f80ed,#56ccf2);
+
+}
+
+
+.departments input:hover{
+    box-shadow: 0 8px 16px 0;
+}
+
+/*
+cgpa calculator
+*/
+
+.title-break{
+    display: block !important;
+}
+.cgpa-head{
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.department-title{
+    text-shadow: 2px 2px 5px blue;
+}
+
+.dept-hidden{
+    display: none;
+}
+
+.body-table-container{
+    text-align: center;
+}
+
+table:hover{
+    box-shadow: 0 8px 16px 0;
+}
+
+table{
+    margin: 0 auto;
+    background-color: aqua;
+    table-layout: fixed;
+    border-radius: 12px;
+}
+
+table tr td{
+    padding: 10px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+table tr td input[type='button']{
+    border-radius: 8px;
+    padding: 8px;
+    background-image: linear-gradient(#fc4a1a,#f7b733);
+}
+
+
+table tr td input[type='text']{
+    padding: 8px;
+}
+
+
+.error-messages{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calculate-cgpa-btn{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px 8px turquoise;
+    background-color: black;
+    color: turquoise;
+}
+
+.calculate-cgpa-btn:hover{
+    box-shadow: 0 8px 16px 0;
+}
+
+/*
+GPA calculator
+*/
+
+.body-table-container label{
+    text-transform: uppercase !important;
+}
+
+.table-head th{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2948ff;
+    border-radius: 12px;
+}
+
+.body-table-container form input.sem-hidden{
+    display: none !important;
+}
+
+.body-table-container form input.hidden-subject-no{
+    display: none !important;
+}
+
+.calculate-gpa-btn{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px 8px turquoise;
+    background-image: linear-gradient(#fc4a1a,#f7b733);
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+/*
+your CGPA
+*/
+
+.result-title{
+    padding: 20px;
+    margin: 10px;
+    color: turquoise;
+    text-shadow: 2px 2px 5px black;
+}
+
+.label{
+    padding: 10px;
+    text-align: center;
+}
+
+.result h1{
+    color: turquoise;
+    text-shadow: 2px 2px 5px black;
+}
+
+/*
+your GPA
+*/
+
+.arrears{
+    text-align: center;
+    color: red;
+}
+
+.arrears h2{
+    animation-name: arrears;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrears{
+    from{color:turquoise}
+    to{color:red}
+}
+
+
+/*
+responsive for Tab
+*/
+
+@media (min-width:768px){
+    html{
+        height: auto;
+    }
+    body{
+        text-align: center;
+    }
+    article{
+        display: block;
+        padding: 20px;
+        margin: 10px auto;
+        height: auto;
+    }
+    .departments input{
+        width: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .title-break{
+        display: none !important;
+    }
+
+    table{
+        border-radius: 12px;
+    }
+    
+    table tr td {
+        padding: 10px;
+    }
+
+}
+
+/*
+responsive for Desktop
+*/
+
+@media (min-width:1225px){
+    body{
+        text-align: center;
+    }
+    article{
+        display: block;
+        width: 30%;
+        height: 400px;
+        float: left;
+    }
+    .departments-button input[type='button']{
+        margin: 25px;
+    }
+    .departments input{
+        width: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .title-break{
+        display: none !important;
+    }
+
+    table{
+        border-radius: 12px;
+    }
+
+    table tr td {
+        padding: 10px;
+    }
+}

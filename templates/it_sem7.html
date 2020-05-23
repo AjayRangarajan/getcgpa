@@ -1,0 +1,221 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">INFORMATION <br class="title-break">TECHNOLOGY</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 7</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem7" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="it_sem7" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="8" max="8" value="8" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">MG8591
+                        Principles of Management</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">CS8792
+                        Cryptography and Network Security</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem7" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">CS8791
+                        Cloud Computing</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub3" value="3" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">OPEN ELECTIVE-2</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub4" value="3" required>
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub5">PROFESSIONAL ELECTIVE-2
+                        <select name="professional_elective_2" id="professional_elective_2">
+                            <option value="IT8002">IT8002
+                                Web Development Frameworks</option>
+                            <option value="CS8082">CS8082
+                                Machine Learning Techniques</option>
+                            <option value="IT8003">IT8003
+                                Formal Languages and Automata Theory</option>
+                            <option value="CS8081">CS8081
+                                Internet of Things</option>
+                            <option value="IT8075">IT8075
+                                Software Project Management</option>
+                            <option value="IT8074">IT8074
+                                Service Oriented Architecture</option>
+                            <option value="GE8077">GE8077
+                                Total Quality Management</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub5" value="3" required>
+                </td>
+                <td>
+                    <select name="sub5_grade" id="sub5_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub6">PROFESSIONAL ELECTIVE-3
+                        <select name="professional_elective_3" id="professional_elective_3">
+                            <option value="CS8079">CS8079
+                                Human Computer Interaction</option>
+                            <option value="CS8073">CS8073
+                                C# and .Net Programming</option>
+                            <option value="CS8088">CS8088
+                                Wireless Adhoc and Sensor Networks</option>
+                            <option value="GE8072">GE8072
+                                Foundation Skills in Integrated Product Development</option>
+                            <option value="CS8071">CS8071
+                                Advanced Topics on Databases</option>
+                            <option value="GE8074">GE8074
+                                Human Rights</option>
+                            <option value="GE8071">GE8071
+                                Disaster Management</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub6" value="3" required>
+                </td>
+                <td>
+                    <select name="sub6_grade" id="sub6_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub7">IT8711
+                        FOSS and Cloud Computing Laboratory</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub7" value="2" required>
+                </td>
+                <td>
+                    <select name="sub7_grade" id="sub7_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub8">IT8761
+                        Security Laboratory</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub8" value="2" required>
+                </td>
+                <td>
+                    <select name="sub8_grade" id="sub8_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}

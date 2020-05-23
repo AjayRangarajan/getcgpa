@@ -1,0 +1,221 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">MECHANICAL <br class="title-break">ENGINEERING</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 6</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem6" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="mech_sem6" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="9" max="9" value="9" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">ME8651
+                        Design of Transmission Systems</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">ME8691
+                        Computer Aided Design and Manufacturing</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem6" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">ME8693
+                        Heat and Mass Transfer</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub3" value="4" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">ME8692
+                        Finite Element Analysis</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub4" value="3" required>
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub5">ME8694
+                        Hydraulics and Pneumatics</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub5" value="3" required>
+                </td>
+                <td>
+                    <select name="sub5_grade" id="sub5_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub6">PROFESSIONAL ELECTIVE-1 <br>
+                        <select name="professional_elective_1" id="professional_elective_1">
+                            <option value="ME8091">ME8091
+                                Automobile Engineering</option>
+                            <option value="PR8592">PR8592
+                                Welding Technology</option>
+                            <option value="ME8096">ME8096
+                                Gas Dynamics and Jet Propulsion</option>
+                            <option value="GE8075">GE8075
+                                Intellectual Property Rights</option>
+                            <option value="GE8073">GE8073
+                                Fundamentals of Nano Science</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub6" value="3" required>
+                </td>
+                <td>
+                    <select name="sub6_grade" id="sub6_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub7">ME8681
+                        CAD / CAM Laboratory</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub7" value="2" required>
+                </td>
+                <td>
+                    <select name="sub7_grade" id="sub7_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub8">ME8682
+                        Design and Fabrication Project</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub8" value="2" required>
+                </td>
+                <td>
+                    <select name="sub8_grade" id="sub8_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub9">HS8581
+                        Professional Communication</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="4" name="sub9" value="1" required>
+                </td>
+                <td>
+                    <select name="sub9_grade" id="sub9_grade" form="sem6" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}

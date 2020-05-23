@@ -1,0 +1,101 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="cgpa-head">
+    <h1>CGPA calculator</h1>
+    <h1 class="department-title">MECHANICAL <br class="title-break">ENGINEERING</h1>
+    <h1>REGULATION 2017</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('findCGPA')}}" class="cgpa-calculator-form" method="POST" autocomplete="off" >
+    <input type="text" class="dept-hidden" name="department" value="mech">
+    <div class="body-table-container">
+        <table class="cgpa-calculator-table">
+            <tr>
+                <td><label for="sem_1">SEM 1:</label></td>
+                <td><input type="text" name="sem_1" placeholder="enter sem 1 GPA"></td>
+                <td>
+                    <a href="{{ url_for('mech_sem1') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_2">SEM 2:</label></td>
+                <td><input type="text" name="sem_2" placeholder="enter sem 2 GPA" ></td>
+                <td>
+                    <a href="{{ url_for('mech_sem2') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_3">SEM 3:</label></td>
+                <td><input type="text" name="sem_3" placeholder="enter sem 3 GPA"></td>
+                <td>
+                    <a href="{{ url_for('mech_sem3') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_4">SEM 4:</label></td>
+                <td><input type="text" name="sem_4" placeholder="enter sem 4 GPA"></td>
+                <td>
+                    <a href="{{ url_for('mech_sem4') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_5">SEM 5:</label></td>
+                <td><input type="text" name="sem_5" placeholder="enter sem 5 GPA"></td>
+                <td>
+                    <a href="{{ url_for('mech_sem5') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_6">SEM 6:</label></td>
+                <td><input type="text" name="sem_6" placeholder="enter sem 6 GPA" ></td>
+                <td>
+                    <a href="{{ url_for('mech_sem6') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_7">SEM 7:</label></td>
+                <td><input type="text" name="sem_7" placeholder="enter sem 7 GPA"></td>
+                <td>
+                    <a href="{{ url_for('mech_sem7') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sem_8">SEM 8:</label></td>
+                <td><input type="text" name="sem_8" placeholder="enter sem 8 GPA" ></td>
+                <td>
+                    <a href="{{ url_for('mech_sem8') }}">
+                        <input type="button" value="calculate GPA">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="error-messages">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <h3>{{message}}</h3>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    <input type="submit" value="calculate CGPA" class="calculate-cgpa-btn">    
+</form>
+{% endblock %}

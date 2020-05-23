@@ -1,0 +1,203 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">BIOMEDICAL <br class="title-break">ENGINEERING</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 7</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem7" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="bme_sem7" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="8" max="8" value="8" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">BM8701
+                        Diagnostic and Therapeutic Equipment-2</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">EC8093
+                        Digital Image Processing</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem7" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">BM8702
+                        Radiological Equipments</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub3" value="3" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">BM8703
+                        Rehabilitation Engineering</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub4" value="3" required>
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub5">PROFESSIONAL ELECTIVE-3 <br>
+                        <select name="professional_elective_3" id="professional_elective_3">
+                            <option value="MD8752">MD8752
+                                Physiological Modeling</option>
+                            <option value="BM8004">BM8004
+                                Robotics in Medicine</option>
+                            <option value="CS8081">CS8081
+                                Internet of Things</option>
+                            <option value="BM8078">BM8078
+                                Soft Computing Techniques</option>
+                            <option value="GE8072">GE8072
+                                Foundation Skills in Integrated Product Development</option>
+                            <option value="GE8071">GE8071
+                                Disaster Management</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub5" value="3" required>
+                </td>
+                <td>
+                    <select name="sub5_grade" id="sub5_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub6">OPEN ELECTIVE-2</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub6" value="3" required>
+                </td>
+                <td>
+                    <select name="sub6_grade" id="sub6_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub7">EC8762
+                        Digital Image Processing Laboratory</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub7" value="2" required>
+                </td>
+                <td>
+                    <select name="sub7_grade" id="sub7_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub8">MD8751
+                        Hospital Training</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub8" value="2" required>
+                </td>
+                <td>
+                    <select name="sub8_grade" id="sub8_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,192 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">CIVIL <br class="title-break">ENGINEERING</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 7</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem7" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="civil_sem7" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="7" max="7" value="7" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">CE8701
+                        Estimation, Costing and Valuation Engineering</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">CE8702
+                        Railways, Airports, Docks and Harbour Engineering</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem7" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">CE8703
+                        Structural Design and Drawing</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub3" value="3" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">PROFESSIONAL ELECTIVE-3 <br>
+                        <select name="professional-elective_3" id="professional-elective_3">
+                            <option value="CE8006">CE8006
+                                Pavement Engineering</option>
+                            <option value="CE8007">CE8007
+                                Traffic Engineering and Management</option>
+                            <option value="CE8008">CE8008
+                                Transport and Environment</option>
+                            <option value="CE8009">CE8009
+                                Industrial Structures</option>
+                            <option value="CE8010">CE8010
+                                Environmental and Social Impact Assessment</option>
+                            <option value="CE8011">CE8011
+                                Design of Prestressed Concrete Structures</option>
+                            <option value="CE8012">CE8012
+                                Construction Planning and Scheduling</option>
+                            <option value="EN8591">EN8591
+                                Municipal Solid Waste Management</option>
+                            <option value="GE8077">GE8077
+                                Total Quality Management</option>
+                            <option value="GE8072">GE8072
+                                Foundation Skills In Integrated Product Development</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub4" value="3" required>
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub5">OPEN ELECTIVE-2</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub5" value="3" required>
+                </td>
+                <td>
+                    <select name="sub5_grade" id="sub5_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub6">CE8711
+                        Creative and Innovative Project</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub6" value="2" required>
+                </td>
+                <td>
+                    <select name="sub6_grade" id="sub6_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub7">CE8712
+                        Industrial Training</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub7" value="2" required>
+                </td>
+                <td>
+                    <select name="sub7_grade" id="sub7_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}

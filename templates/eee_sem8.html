@@ -1,0 +1,127 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">ELECTRICAL <br class="title-break"> AND  <br class="title-break">ELECTRONICS ENGINEERING</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 8</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem8" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="eee_sem8" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="3" max="3" value="3" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">PROFESSIONAL ELECTIVE-5
+                        <select name="professional_elective_5" id="professional_elective_5">
+                            <option value="EE8011">EE8011
+                                Flexible AC Transmission
+                                Systems</option>
+                            <option value="EE8012">EE8012 Soft Computing Techniques</option>
+                            <option value="EE8013">EE8013 Power Systems Dynamics</option>
+                            <option value="EE8014">EE8014 SMPS and UPS</option>
+                            <option value="EE8015">EE8015
+                                Electric Energy Generation,
+                                Utilization and Conservation</option>
+                            <option value="GE8076">GE8076
+                                Professional Ethics in
+                                Engineering</option>
+                            <option value="MG8591">MG8591 Principles of Management</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">PROFESSIONAL ELECTIVE-6
+                        <select name="professional_elective_6" id="professional_elective_6">
+                            <option value="EE8016">EE8016
+                                Energy Management and
+                                Auditing</option>
+                            <option value="CS8391">CS8391 Data Structures</option>
+                            <option value="EE8017">EE8017
+                                High Voltage Direct Current
+                                Transmission</option>
+                            <option value="EE8018">EE8018
+                                Microcontroller Based System
+                                Design</option>
+                            <option value="EE8019">EE8019 Smart Grid</option>
+                            <option value="EI8073">EI8073 Biomedical Instrumentation</option>
+                            <option value="GE8073">GE8073
+                                Fundamentals of Nano
+                                Science</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem8" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">EE8811-PROJECT WORK</label>
+                </td>
+                <td>
+                    <input type="number" min="10" max="10" name="sub3" value="10" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}
+

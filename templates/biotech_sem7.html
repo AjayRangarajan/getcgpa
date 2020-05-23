@@ -1,0 +1,209 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">BIOTECHNOLOGY</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 7</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem7" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="biotech_sem7" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="8" max="8" value="8" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">GE8077 Total Quality Management</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">BT8751 Downstream Processing</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem7" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">BT8791 Immunology</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub3" value="3" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">PROFESSIONAL ELECTIVE-5 <br>
+                        <select name="professional_elective_5" id="professional_elective_5">
+                            <option value="BT8018">BT8018 Plant Biotechnology</option>
+                            <option value="BT8019">BT8019 Process Equipments and Plant
+                                Design</option>
+                            <option value="BT8020">BT8020 Bioconjugate Technology and
+                                Applications</option>
+                            <option value="BT8021">BT8021 Genetics</option>
+                            <option value="PY8071">PY8071 Clinical Trials</option>
+                            <option value="GE8074">GE8074 Human Rights</option>
+                            <option value="GE8072">GE8072
+                                Foundation Skills in Integrated
+                                Product Development</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub4" value="3" required>
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub5">PROFESSIONAL ELECTIVE-6 <br>
+                        <select name="professional_elective_6" id="professional_elective_6">
+                            <option value="BT8022">BT8022 Neurobiology and Cognitive
+                                Sciences</option>
+                            <option value="BT8023">BT8023 Tissue Engineering</option>
+                            <option value="BT8091">BT8091 Instrumentation and Process
+                                Control</option>
+                            <option value="BT8024">BT8024
+                                Biosafety and Hazard
+                                Management</option>
+                            <option value="BT8025">BT8025 Immunotechnology</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub5" value="3" required>
+                </td>
+                <td>
+                    <select name="sub5_grade" id="sub5_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub6">OPEN ELECTIVE-2</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub6" value="3" required>
+                </td>
+                <td>
+                    <select name="sub6_grade" id="sub6_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub7">BT8711 Downstream Processing
+                        Laboratory</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub7" value="2" required>
+                </td>
+                <td>
+                    <select name="sub7_grade" id="sub7_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub8">BT8712 Immunology Laboratory</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub8" value="2" required>
+                </td>
+                <td>
+                    <select name="sub8_grade" id="sub8_grade" form="sem7" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}

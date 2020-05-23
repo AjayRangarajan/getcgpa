@@ -1,0 +1,19 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <h1 class="result-title">GPA CALCULATOR</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<h2 class="label">Your GPA is:</h2>
+<div class="result">
+    <h1>{{gpa}}</h1> 
+</div>
+{% if arrears>0 %}
+<div class="arrears">
+    <h2>you have {{arrears}} arrears</h2>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,216 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <h1>CUSTOM GPA CALCULATOR</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="custom_sem" method="POST" autocomplete="off">
+        <input type="text" class="sem-hidden" name="semester" value="custom_gpa_calculator" style="display: none;">
+        <div class="subject-no-container" style="margin: 10px;">
+            <label for="subjec_no">Number of sujects to calculate:</label>
+            <input type="number" name='subject_no' min="1" max="10" value="" required>
+        </div>
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">SUBJECT 1</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub1" value="" >
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">SUBJECT 2</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub2" value="" >
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="custom_sem" >
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">SUBJECT 3</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub3" value="" >
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="custom_sem" >
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">SUBJECT 4</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub4" value="" >
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub5">SUBJECT 5</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub5" value="" >
+                </td>
+                <td>
+                    <select name="sub5_grade" id="sub5_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub6">SUBJECT 6</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub6" value="" >
+                </td>
+                <td>
+                    <select name="sub6_grade" id="sub6_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub7">SUBJECT 7</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub7" value="" >
+                </td>
+                <td>
+                    <select name="sub7_grade" id="sub7_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub8">SUBJECT 8</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub8" value="" >
+                </td>
+                <td>
+                    <select name="sub8_grade" id="sub8_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub9">SUBJECT 9</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub9" value="" >
+                </td>
+                <td>
+                    <select name="sub9_grade" id="sub9_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub10">SUBJECT 10</label>
+                </td>
+                <td>
+                    <input type="number" min="1" max="10" name="sub10" value="" >
+                </td>
+                <td>
+                    <select name="sub10_grade" id="sub10_grade" form="custom_sem" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}

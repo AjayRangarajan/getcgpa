@@ -1,0 +1,136 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">AUTOMOBILE <br class="title-break">ENGINEERING</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 8</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem8" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="automobile_sem8" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="4" max="4" value="4" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">AT8801
+                        Vehicle Body Engineering</label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">PROFESSIONAL ELECTIVE-4
+                        <select name="professional_elective_4" id="professional_elective_4">
+                            <option value="AT8008">AT8008
+                                Transport Management</option>
+                            <option value="MG8091">MG8091
+                                Entrepreneurship Development</option>
+                            <option value="AT8009">AT8009
+                                Automotive Safety</option>
+                            <option value="AT8010">AT8010
+                                Automotive Pollution and Control</option>
+                            <option value="AT8011">AT8011
+                                Automotive Testing</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem8" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">PROFESSIONAL ELECTIVE-5
+                        <select name="professional_elective_5" id="professional_elective_5">
+                            <option value="PR8491">PR8491
+                                Computer Integrated Manufacturing</option>
+                            <option value="AT8012">AT8012
+                                Alternative Fuels and Energy Systems</option>
+                            <option value="MG8591">MG8591
+                                Principles of Management</option>
+                            <option value="GE8076">GE8076
+                                Professional Ethics in Engineering</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub3" value="3" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub4">AT8811-PROJECT WORK</label>
+                </td>
+                <td>
+                    <input type="number" min="10" max="10" name="sub4" value="10" required>
+                </td>
+                <td>
+                    <select name="sub4_grade" id="sub4_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}
+

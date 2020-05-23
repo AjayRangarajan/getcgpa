@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "virtual\\Scripts\\python.exe",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint-flask",
+        "pyling-flask-sqlalchemy"
+    ],
+    "python.formatting.provider": "black"
+}

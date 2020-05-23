@@ -1,0 +1,127 @@
+{% extends "app_layout.html" %}
+
+{% block heading %}
+<div class="head">
+    <div class="cgpa-head">
+        <h1>CGPA calculator</h1>
+        <h1 class="department-title">CIVIL <br class="title-break">ENGINEERING</h1>
+        <h1>REGULATION 2017</h1>
+    </div>
+    <h1>SEMESTER 8</h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="body-table-container">
+    <form action="{{ url_for('findGPA') }}" id="sem8" method="POST">
+        <input type="text" class="sem-hidden" name="semester" value="civil_sem8" style="display: none;">
+        <input type="number" class="hidden-subject-no" name='subject_no' min="3" max="3" value="3" >
+        <table>
+            <tr class="table-head">
+                <th>SUBJECT </th>
+                <th>CREDITS </th>
+                <th>GRADE </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub1">PROFESSIONAL ELECTIVE-4 <br>
+                        <select name="professional_elective_4" id="professional_elective_4">
+                            <option value="CE8013">CE8013
+                                Coastal Engineering</option>
+                            <option value="CE8014">CE8014
+                                Participatory Water Resources Management</option>
+                            <option value="CE8015">CE8015
+                                Integrated Water Resources Management</option>
+                            <option value="CE8016">CE8016
+                                Groundwater Engineering</option>
+                            <option value="CE8017">CE8017
+                                Water Resources Systems Engineering</option>
+                            <option value="CE8018">CE8018
+                                Geo-Environmental Engineering</option>
+                            <option value="CE8091">CE8091
+                                Hydrology and Water Resources Engineering</option>
+                            <option value="GE8076">GE8076
+                                Professional Ethics in Engineering</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub1" value="3" required>
+                </td>
+                <td>
+                    <select name="sub1_grade" id="sub1_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub2">PROFESSIONAL ELECTIVE-5 <br>
+                        <select name="professional_elective_5" id="professional_elective_5">
+                            <option value="CE8019">CE8019
+                                Computer Aided Design of Structures</option>
+                            <option value="CE8020">CE8020
+                                Maintenance, Repair and Rehabilitation of Structures</option>
+                            <option value="CE8021">CE8021
+                                Structural Dynamics and Earthquake Engineering</option>
+                            <option value="CE8022">CE8022
+                                Prefabricated Structures</option>
+                            <option value="CE8023">CE8023
+                                Bridge Engineering</option>
+                            <option value="GE8073">GE8073
+                                Fundamentals of Nano Science</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <input type="number" min="2" max="4" name="sub2" value="3" required>
+                </td>
+                <td>
+                    <select name="sub2_grade" id="sub2_grade" form="sem8" required>
+                        <option value="10"selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sub3">CE8811-PROJECT WORK</label>
+                </td>
+                <td>
+                    <input type="number" min="10" max="10" name="sub3" value="10" required>
+                </td>
+                <td>
+                    <select name="sub3_grade" id="sub3_grade" form="sem8" required>
+                        <option value="10" selected>O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="0">U</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="error-messages">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <h3>{{message}}</h3>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <input type="submit" value="Calculate GPA" class="calculate-gpa-btn">
+    </form>
+</div>
+{% endblock %}
+
