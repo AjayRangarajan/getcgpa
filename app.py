@@ -67,7 +67,7 @@ def others():
 
 #cgpa calculator function 
 
-@app.route("/Your CGPA",methods=["POST"])
+@app.route("/Your CGPA",methods=["GET","POST"])
 def findCGPA():
     department=request.form.get('department')
     sem_1=request.form.get("sem_1")
@@ -109,7 +109,7 @@ def findCGPA():
 
 #GPA calculator function
 
-@app.route("/Your GPA",methods=["POST"])
+@app.route("/Your GPA",methods=["GET","POST"])
 def findGPA():
     subject_no=request.form.get("subject_no")
     sem=request.form.get("semester")
@@ -607,4 +607,3 @@ def biotech_sem8():
 def custom_gpa_calculator():
     return render_template("custom_gpa_calculator.html")
 
-    
