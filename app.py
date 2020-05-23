@@ -607,3 +607,5 @@ def biotech_sem8():
 def custom_gpa_calculator():
     return render_template("custom_gpa_calculator.html")
 
+if __name__=="__main__":
+    app.run()
