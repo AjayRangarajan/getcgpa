@@ -5,7 +5,11 @@ app.config['SECRET_KEY']='kladsfjhewgvnjeihmohvchxhzRzxtyihjpliuiie575uiox555vex
 
 @app.route("/")
 def home():
-    return render_template("app_home.html",title="HOME")
+    title="Anna University CGPA Calculator Regulation 2017"
+    description="CGPA Calculator for Anna University Regulation 2017.This website will provide CGPA calculator for Engineering students of Anna University and affilated colleges for Regulation 2017"
+    keywords="Anna University,Regulation 2017,CGPA Calculator,Engineering college,CGPA Calculator for Anna University Regulation 2017"
+    url="http://cgpa-calculator-r17.herokuapp.com"
+    return render_template("app_home.html",title=title,description=description,keywords=keywords,url=url)
 
 @app.route("/Departmens")
 def departments():
