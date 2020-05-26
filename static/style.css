@@ -133,7 +133,6 @@ table:hover{
 
 table{
     margin: 0 auto;
-    background-color: aqua;
     table-layout: fixed;
     border-radius: 12px;
 }
