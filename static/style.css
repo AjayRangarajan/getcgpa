@@ -208,9 +208,6 @@ GPA calculator
     font-weight: bolder;
 }
 
-.body-table-container table{
-    border-color: cyan;
-}
 
 /*
 your CGPA
@@ -323,3 +320,6 @@ responsive for Desktop
     }
 }
 
+table{
+    background-color: aqua;
+}
