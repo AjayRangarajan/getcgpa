@@ -135,6 +135,7 @@ table{
     margin: 0 auto;
     table-layout: fixed;
     border-radius: 12px;
+    background-color: turquoise;
 }
 
 table tr td{
