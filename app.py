@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,redirect,flash,url_for
 
 app=Flask(__name__)
-app.config['SECRET_KEY']='kladsfjhewgvnjeihmohvchxhzRzxtyihjpliuiie575uiox555vexwxcnvuemireomuntehl'
+app.config['SECRET_KEY']='kladsfjhewgvnjfsndbfjdkljsioskfkjfioekdnkwooweqpncvdfggdfggeehjrgbuemireomuntehl'
 
 @app.route("/")
 def home():
