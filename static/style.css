@@ -135,7 +135,6 @@ table{
     margin: 0 auto;
     table-layout: fixed;
     border-radius: 12px;
-    background-color: turquoise;
 }
 
 table tr td{
@@ -173,6 +172,10 @@ table tr td input[type='text']{
 
 .calculate-cgpa-btn:hover{
     box-shadow: 0 8px 16px 0;
+}
+
+.body-table-container table{
+    background-color: cyan;
 }
 
 /*
