@@ -174,9 +174,6 @@ table tr td input[type='text']{
     box-shadow: 0 8px 16px 0;
 }
 
-.body-table-container table{
-    background-color: blue;
-}
 
 /*
 GPA calculator
@@ -209,6 +206,10 @@ GPA calculator
     background-image: linear-gradient(#fc4a1a,#f7b733);
     font-style: oblique;
     font-weight: bolder;
+}
+
+.body-table-container table{
+    border-color: cyan;
 }
 
 /*
