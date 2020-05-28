@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departmens</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/EIE</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/EEE</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/ECE</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/IT</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/CSE</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/CIVIL</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/MECH</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/AUTOMOBILE</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/AERO</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/BIOMEDICAL</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/AGRI</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Departments/BIOTECH</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Other%20Departments</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EIE/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/EEE/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/ECE/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/IT/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CSE/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/CIVIL/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/MECH/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AUTOMOBILE/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AERO/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BME/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/AGRI/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%201</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%202</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%203</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%204</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%205</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%206</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%207</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/BIOTECH/sem%208</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://cgpa-calculator-r17.herokuapp.com/Other%20Departments/GPA%20Calculator</loc>
+  <lastmod>2020-05-28T12:00:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
