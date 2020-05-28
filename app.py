@@ -5,69 +5,110 @@ app.config['SECRET_KEY']='kladsfjhewgvnjfsndbfjdkljsioskfkjfioekdnkwooweqpncvdfg
 
 @app.route("/")
 def home():
-    title="Anna University CGPA Calculator Regulation 2017"
-    description="CGPA Calculator for Anna University Regulation 2017.This website will provide CGPA calculator for Engineering students of Anna University and affilated colleges for Regulation 2017"
-    keywords="Anna University,Regulation 2017,CGPA Calculator,Engineering college,CGPA Calculator for Anna University Regulation 2017"
-    url="http://cgpa-calculator-r17.herokuapp.com"
-    return render_template("app_home.html",title=title,description=description,keywords=keywords,url=url)
+    title="Online CGPA Calculator|Anna University|Regulation 2017"
+    description="Online CGPA Calculator for Anna University Regulation 2017.This website will provide CGPA calculator for Engineering students of Anna University and affilated colleges for Regulation 2017"
+    keywords="CGPA calculator,online CGPA calculator,cgpa calculator,Anna University,Regulation 2017,Online CGPA Calculator,Engineering college,CGPA Calculator for Anna University Regulation 2017"
+    return render_template("app_home.html",title=title,description=description,keywords=keywords)
 
 @app.route("/Departmens")
 def departments():
-    return render_template("departments.html",title="DEPARTMENTS")
+    title="Departments|CGPA Calculator Anna University Regulation 2017"
+    description="list of departments available to calculate CGPA for Anna University regulation 2017"
+    keywords="EIE,ECE,EEE,IT,CSE,MECH,CIVIL,AERONAUTICAL,AUTOMOBILE,BIOMEDICAL,BIOTECHNOLOGY,BIOMEDICAL,AGRICULTURE,ENGINEERING,eie,ece,eee,it,cse,mech,civil,aeronautical engineering,automobile engineering,biomedical engineering,agriculture engineering,biomedical engineering"
+    return render_template("departments.html",title=title,description=description,keywords=keywords)
 
 #department wise CGPA calculator
 
 @app.route('/Departments/EIE')
 def eie():
-    return render_template("eie_cgpa_calculator.html",title="EIE")
+    title="Electronics and Instrumentation Engineering|CGPA Calculator Regulation 2017"
+    description="CGPA Calculator for Electronics and Instrumentation Engineering Regulation 2017"
+    keywords="eie,electronics and instrumentation engineering,EIE,CGPA Calcualtor,Regulation 2017,regulation 2017,cgpa calculator"
+    return render_template("eie_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/EEE')
 def eee():
-    return render_template("eee_cgpa_calculator.html",title="EEE")
+    title="EEE|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Electrical and Electronics Engineering Anna University Regulation 2017"
+    keywords="eee,Electrical and Electronics engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("eee_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/ECE')
 def ece():
-    return render_template("ece_cgpa_calculator.html",title="ECE")
+    title="ECE|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Electronics and Communication Engineering Anna University Regulation 2017"
+    keywords="ece,Electronics and Communication engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("ece_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/IT')
 def it():
-    return render_template("it_cgpa_calculator.html",title="IT")
+    title="INFORMATION TECHNOLOGY|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for information technology Anna University Regulation 2017"
+    keywords="information technology,cgpa calculator,anna university,regulation 2017"
+    return render_template("it_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/CSE')
 def cse():
-    return render_template("cse_cgpa_calculator.html",title="CSE")
+    title="CSE|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Computer Science Engineering Anna University Regulation 2017"
+    keywords="Computer Science engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("cse_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/CIVIL')
 def civil():
-    return render_template("civil_cgpa_calculator.html",title="CIVIL")
+    title="CIVIL ENGINEERING|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Civil Engineering Anna University Regulation 2017"
+    keywords="civil engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("civil_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/MECH')
 def mech():
-    return render_template("mech_cgpa_calculator.html",title="MECH")
+    title="MECHANICAL ENGINEERING|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Mechanical Engineering Anna University Regulation 2017"
+    keywords="mechanical engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("mech_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/AUTOMOBILE')
 def automobile():
-    return render_template("automobile_cgpa_calculator.html",title="AUTOMOBILE")
+    title="AERONAUTICAL ENGINEERING|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Aeronautical Engineering Anna University Regulation 2017"
+    keywords="aeronautical engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("automobile_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/AERO')
 def aero():
-    return render_template("aero_cgpa_calculator.html",title="AERO")
+    title="AERONAUTICAL ENGINEERING|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Aeronautical Engineering Anna University Regulation 2017"
+    keywords="Aeronautical engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("aero_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/BIOMEDICAL')
 def bme():
-    return render_template("bme_cgpa_calculator.html",title="BIOMEDICAL")
+    title="BIOMEDICAL ENGINEERING|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Biomedical Engineering Anna University Regulation 2017"
+    keywords="biomedical engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("bme_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/AGRI')
 def agri():
-    return render_template("agri_cgpa_calculator.html",title="AGRI")
+    title="AGRICULTURE ENGINEERING|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Agriculture Engineering Anna University Regulation 2017"
+    keywords="agriculture engineering,cgpa calculator,anna university,regulation 2017"
+    return render_template("agri_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Departments/BIOTECH')
 def biotech():
-    return render_template("biotech_cgpa_calculator.html",title="BIOTECH")
+    title="BIOTECHNOLOGY|CGPA Calculator Anna University Regulation 2017"
+    description="CGPA Calculator for Biotechnology Anna University Regulation 2017"
+    keywords="biotechnology,cgpa claculator,regulation 2017,anna university"
+    return render_template("biotech_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 @app.route('/Other Departments')
 def others():
-    return render_template("other_department_cgpa_calculator.html",title="OTHER DEPARTMENTS")
+    title="OTHER DEPARTMENTS|CGPA Calculator Anna University Regulation 2017"
+    description="custom CGPA calculator for other departments not in the departments list of our website"
+    keywords="custom cgpa calculator,other departments,cgpa calculator anna university,regulation 2017"
+    return render_template("other_department_cgpa_calculator.html",title=title,description=description,keywords=keywords)
 
 #cgpa calculator function 
 
