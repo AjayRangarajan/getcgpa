@@ -7,14 +7,14 @@ app.config['SECRET_KEY']='kladsfjhewgvnjfsndbfjdkljsioskfkjfioekdnkwooweqpncvdfg
 def home():
     title="Online CGPA Calculator|Anna University|Regulation 2017"
     description="Online CGPA Calculator for Anna University Regulation 2017.This website will provide CGPA calculator for Engineering students of Anna University and affilated colleges for Regulation 2017"
-    keywords="CGPA calculator,online CGPA calculator,cgpa calculator,Anna University,Regulation 2017,Online CGPA Calculator,Engineering college,CGPA Calculator for Anna University Regulation 2017"
+    keywords="CGPA calculator,getcgpa,online CGPA calculator,cgpa calculator,Anna University,Regulation 2017,Online CGPA Calculator,Engineering college,CGPA Calculator for Anna University Regulation 2017"
     return render_template("app_home.html",title=title,description=description,keywords=keywords)
 
-@app.route("/Departmens")
+@app.route("/Departments")
 def departments():
     title="Departments|CGPA Calculator Anna University Regulation 2017"
     description="list of departments available to calculate CGPA for Anna University regulation 2017"
-    keywords="EIE,ECE,EEE,IT,CSE,MECH,CIVIL,AERONAUTICAL,AUTOMOBILE,BIOMEDICAL,BIOTECHNOLOGY,BIOMEDICAL,AGRICULTURE,ENGINEERING,eie,ece,eee,it,cse,mech,civil,aeronautical engineering,automobile engineering,biomedical engineering,agriculture engineering,biomedical engineering"
+    keywords="EIE,ECE,EEE,IT,CSE,MECH,CIVIL,AERONAUTICAL,AUTOMOBILE,BIOMEDICAL,BIOTECHNOLOGY,BIOMEDICAL,AGRICULTURE,ENGINEERING,eie,ece,eee,it,cse,mech,civil,aeronautical engineering,automobile engineering,biomedical engineering,agriculture engineering,biomedical engineering,getcgpa"
     return render_template("departments.html",title=title,description=description,keywords=keywords)
 
 #department wise CGPA calculator
