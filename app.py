@@ -1,8 +1,8 @@
+import os
 from flask import Flask,render_template,request,redirect,flash,url_for
 
 app=Flask(__name__)
-app.config['SECRET_KEY']='kladsfjhewgvnjfsndbfjdkljsioskfkjfioekdnkwooweqpncvdfggdfggeehjrgbuemireomuntehl'
-
+app.config['SECRET_KEY']= os.environ.get('CGPA_SECRET_KEY')
 @app.route("/")
 def home():
     title="Online CGPA Calculator|Anna University|Regulation 2017"
