@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "virtual\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "python.linting.pylintArgs": [
         "--load-plugins",
         "pylint-flask",
